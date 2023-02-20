@@ -1,8 +1,8 @@
 <?php 
 session_start();
 
-include("/Log in/connection.php");
-include("/Log in/functions.php");
+include("Log in/connection.php");
+include("Log in/functions.php");
 
 $user_data = check_login($con);
 
@@ -18,21 +18,21 @@ $_SESSION;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="/Log in/public/css/home.css">
+    <link rel="stylesheet" href="Log in/public/css/home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <section class="header">
-    <div class="logoutc"><a href="/Log in/logout.php" class="logout">Log out</a></div>
+    <div class="logoutc"><a href="Log in/logout.php" class="logout">Log out</a></div>
     <nav>
-      <a href="index.php"><img src="/Images/isd logo.jpg" alt=""></a>
+      <a href="index.php"><img src="Images/isd logo.jpg" alt=""></a>
       <div class="nav-links" id="navLinks">
       <i class="fa fa-times" onclick="hideMenu()"></i> 
         <ul>
           <li><a href="index.php">HOME</a></li>
-          <li><a href="/Schedule/Schedulepage.php">SCHEDULE</a></li>
-          <li><a href="/Topics/Topics.php">TOPICS</a></li>
-          <li><a href="/Resource Page/Resourcepage.php">RESOURCES</a></li>
+          <li><a href="Schedule/Schedulepage.php">SCHEDULE</a></li>
+          <li><a href="Topics/Topics.php">TOPICS</a></li>
+          <li><a href="Resource Page/Resourcepage.php">RESOURCES</a></li>
         </ul>
       </div>
       <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -102,7 +102,7 @@ $_SESSION;
 </section>
  
 
-<script src="/Log in/public/js/home.js"></script>
+<script src="Log in/public/js/home.js"></script>
 
 
 
