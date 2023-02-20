@@ -4,10 +4,10 @@ $dbuser = "b1ebb89a30fd7f";
 $dbpass = "937540e9";
 $dbname = "heroku_0184b4aca408eb5";
 
-// if (!$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)){
-//     die("failed to connect!");
-// }
+if (!$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)){
+    die("failed to connect!");
+}
 
-$con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)
+// $con = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname)
 
 
