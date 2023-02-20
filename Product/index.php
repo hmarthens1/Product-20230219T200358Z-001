@@ -1,8 +1,8 @@
 <?php 
 session_start();
 
-include(__DIR__ . "/Log in/connection.php");
-include(__DIR__ . "/Log in/functions.php");
+include(__DIR__ . "/Log in/public/connection.php");
+include(__DIR__ . "/Log in/public/functions.php");
 
 $user_data = check_login($con);
 
